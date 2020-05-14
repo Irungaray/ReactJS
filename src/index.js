@@ -8,7 +8,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Button text="Click" />
+    <Button text="Click 2" />
   </React.StrictMode>,
   document.getElementById('root')
 );
