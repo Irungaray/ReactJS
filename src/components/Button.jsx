@@ -5,9 +5,21 @@ class Button extends React.Component {
         count: 0
     }
 
-    handleClick = () => {
+    handleGarompas = () => {
         this.setState({
             count: this.state.count + 1
+        })
+    }
+
+    handleManzanas = () => {
+        this.setState({
+            count: this.state.count + 1
+        })
+    }
+
+    resetState = () => {
+        this.setState({
+            count: 0
         })
     }
 
@@ -16,8 +28,18 @@ class Button extends React.Component {
         return(
             <div>
                 <h1>Garompas: {count}</h1>
-                <button type="button" onClick={this.handleClick}>
+                <button type="button" onClick={this.handleGarompas}>
                     METELE UNA GAROMPA
+                </button>
+
+                <h1>Manzanas: {count}</h1>
+                <button type="button" onClick={this.handleManzanas}>
+                    METELE UNA MANZANA
+                </button>
+
+                <h1>RESETIAR</h1>
+                <button type="button" onClick={this.resetState}>
+                    RESETIALO NOMA
                 </button>
             </div>
         )
